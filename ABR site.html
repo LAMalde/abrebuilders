@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ABR website</title>
+<link rel="stylesheet" type="text/html" href="../ABR site.html">
+	</head>
+	<body>
+		<style type="text/css">
+		body {
+			background-image: url("ABRBackground.gif");
+			background-attachment: fixed;
+   		 	background-position: center;
+    		background-repeat: no-repeat;
+    		background-size: cover;
+			float: left;
+			margin-left: 100px;
+			margin-top: 200px;
+			padding: 10px;
+			color: black;
+			padding: 20px;
+			font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";}
+	</style>
+ 	<div id="page">
+ 	<div id="logo">
+	<img src="ABR3.gif" width="500" alt="Auto Body Rebuilders"/></div>
+	  <h1 class="w3-center">Where Quality Matters!</h1>
+		</div>
+		
+<style type="text/css">
+			li {
+	display: inline-block;
+	margin-right: 10px;}
+</style>
+		
+	<ul>
+		<li><a href="ABR site.html"><button type="button">Home</button></a></li>
+		<li><a href="ABR About.html"><button type="button">About Us</button></a></li>
+		<li><a href="ABR H-L.html"><button type="button">Reviews</button></a></li>
+		<li><a href="ABR Contact.html"><button type="button">Contact</button></a></li>
+	</ul>
+				
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<body>
+
+<h2 class="w3-center">Before and After</h2>
+
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="MTD.jpg" style="width:700px">
+  <img class="mySlides" src="MTR.jpg" style="width:700px">
+  <img class="mySlides" src="BD.jpg" style="width:700px">
+  <img class="mySlides" src="BR.jpg" style="width:700px">
+  <img class="mySlides" src="GMCD.jpg" style="width:700px">
+  <img class="mySlides" src="GMCF.jpg" style="width:700px">
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+	
+<div id="footer">
+	<style type="text/css">
+		footer {
+			text-align: center;}
+	</style>
+		<p>Auto Body Rebuilders 2018&copy;</p>
+</div>  
+</body>
+</html>
